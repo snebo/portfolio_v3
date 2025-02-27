@@ -47,7 +47,7 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<motion.p
+			<motion.h1
 				className="mt-10 px-4 text-xl font-medium !leading-[1.5rem]"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
@@ -58,15 +58,15 @@ export default function Intro() {
 				web applications. I focus on creating strong backend systems that work seamlessly with{' '}
 				<span className="font-semibold text-black/65">user-friendly interfaces</span>, ensuring
 				everything runs smoothly behind the scenes.
-			</motion.p>
+			</motion.h1>
 
-			<motion.p
+			<motion.h1
 				className="mt-3 mb-12 px-4 text-xl font-medium !leading-[1.5rem]"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
 			>
 				I enjoy solving complex problems and making technology feel effortless for users.
-			</motion.p>
+			</motion.h1>
 			<motion.div
 				className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-base font-medium cursor-pointer"
 				initial={{ opacity: 0, y: 100 }}
