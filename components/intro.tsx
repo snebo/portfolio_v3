@@ -1,16 +1,26 @@
 'use client';
+import { useActiveSessionContext } from '@/context/active-session-context';
 import profileImage from '@/public/profileImage.png';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
+import { useInView } from 'react-intersection-observer';
 
 export default function Intro() {
+	const { ref, inView } = useInView({ threshold: 0.5 });
+	const { setActiveSession } = useActiveSessionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSession('Home');
+		}
+	}, [inView, setActiveSession]);
 	return (
-		<section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-60" id="home">
+		<section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-60" id="home" ref={ref}>
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div

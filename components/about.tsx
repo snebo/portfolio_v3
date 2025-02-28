@@ -1,21 +1,39 @@
 'use client';
+import { useActiveSessionContext } from '@/context/active-session-context';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import SectionHeading from './section-heading';
+
 export default function About() {
-	const ref = useRef<HTMLDivElement>(null);
+	const { ref, inView } = useInView({
+		threshold: 0.5,
+	});
+	const { setActiveSession } = useActiveSessionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSession('About');
+		}
+	}, [inView, setActiveSession]);
+
+	const navref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
-		target: ref,
+		target: navref,
 		offset: ['0 1', '1.4 1'],
 	});
 	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 	return (
-		<section className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40 scroll-mt-28" id="about">
+		<section
+			className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40 scroll-mt-28"
+			id="about"
+			ref={ref}
+		>
 			<SectionHeading>About Me</SectionHeading>
 			<motion.div
 				className=""
-				ref={ref}
+				ref={navref}
 				style={{
 					scale: scaleProgress,
 					opacity: opacityProgress,

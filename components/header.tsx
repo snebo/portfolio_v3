@@ -1,12 +1,13 @@
 'use client'; // the framer package uses 'use states' which is only available on client components
+import { useActiveSessionContext } from '@/context/active-session-context';
 import { links } from '@/lib/data';
 import clsx from 'clsx';
 import { motion } from 'framer-motion'; //handle animations
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Header() {
-	const [activeSession, setActiveSession] = useState('Home'); // for tracking location on page
+	const { activeSession, setActiveSession } = useActiveSessionContext();
 	return (
 		<header className="z-[900] relative">
 			<motion.div
