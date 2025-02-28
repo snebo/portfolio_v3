@@ -1,6 +1,7 @@
 import React from 'react';
 // import { CgWorkAlt } from 'react-icons/cg';
 // import { FaReact } from 'react-icons/fa';
+import exampleProject from '@/public/project-example.png';
 import { LuGraduationCap } from 'react-icons/lu';
 
 // you can import your images here using
@@ -46,9 +47,10 @@ export const experienceData = [
 export const projectsData = [
 	{
 		title: 'project title',
-		description: 'description of project',
+		description:
+			'description of project bla bla bla. this is me adding more description to the text to try and make it seem longers',
 		tags: ['languages', 'frameworks', 'database'],
-		// imgaeUrl: projectImage
+		imageUrl: exampleProject,
 	},
 ] as const;
 
