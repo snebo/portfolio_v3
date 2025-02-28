@@ -6,12 +6,12 @@ export default function About() {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ['0 1', '1 1'],
+		offset: ['0 1', '1.4 1'],
 	});
-	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 	return (
-		<section className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40">
+		<section className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40 scroll-mt-28" id="about">
 			<SectionHeading>About Me</SectionHeading>
 			<motion.div
 				className=""
