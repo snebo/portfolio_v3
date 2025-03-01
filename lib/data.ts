@@ -6,7 +6,7 @@ import gameDev from '@/public/gamedev.jpg';
 import nemoAsr from '@/public/nemo-transcription.png';
 import exampleProject from '@/public/project-example.png';
 import zoomBot from '@/public/zoom sdk.png';
-import { LuGraduationCap } from 'react-icons/lu';
+import { LuBriefcase, LuGraduationCap } from 'react-icons/lu';
 
 // you can import your images here using
 // import customName from @/public/imageName.xxx
@@ -40,9 +40,34 @@ export const links = [
 
 export const experienceData = [
 	{
+		title: 'Software Developer - GetExamReady',
+		location: 'Remote',
+		description:
+			'Developed a transcription API using NVIDIA NeMo and Google Colab to process and analyze spoken content for the GetExamReady platform.',
+		icon: React.createElement(LuBriefcase),
+		date: '2024',
+	},
+	{
+		title: 'Backend Developer - Inventors Community',
+		location: 'Remote',
+		description:
+			'Developed secure APIs and database schemas using NestJS and Mongoose. Worked in a team environment to enhance the Inventors community platform.',
+		icon: React.createElement(LuBriefcase),
+		date: '2023',
+	},
+	{
 		title: 'CodePath Software Engineering Course',
-		location: 'remote',
-		description: 'A 3month intensive session bal bla bla...',
+		location: 'Remote',
+		description:
+			'Completed an intensive 3-month training program covering data structures, algorithms, and full-stack web development, focusing on industry best practices.',
+		icon: React.createElement(LuGraduationCap),
+		date: '2024',
+	},
+	{
+		title: 'Bachelor’s Degree in [Your Major]',
+		location: 'Nigeria',
+		description:
+			'Graduated with a strong foundation in software engineering, algorithms, and system design.',
 		icon: React.createElement(LuGraduationCap),
 		date: '2024',
 	},
