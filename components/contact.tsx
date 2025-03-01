@@ -3,6 +3,7 @@ import { sendEmail } from '@/actions/sendEmail';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import SectionHeading from './section-heading';
 import SubmitBtn from './submit-btn';
 
@@ -25,8 +26,10 @@ export default function Contact() {
 
 			if (response?.error) {
 				setError(response.error); // Show error if any
+				toast.error(response.error);
 			} else {
 				form.reset(); // ✅ Reset form only on success
+				toast.success('Email sent successfully!');
 			}
 		} catch (err) {
 			setError('Something went wrong. Please try again.');
