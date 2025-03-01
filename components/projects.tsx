@@ -8,7 +8,7 @@ import SectionHeading from './section-heading';
 export default function ProjectSection() {
 	const { ref } = useSectionInView({ sectionName: 'Projects', thresoldValue: 0.3 });
 	return (
-		<section id="projects" className="scroll-mt-28" ref={ref}>
+		<section id="projects" className="scroll-mt-28 mb-28 sm:mb-40" ref={ref}>
 			<SectionHeading>my Projects</SectionHeading>
 			<div className="">
 				{projectsData.map((project, index) => (
