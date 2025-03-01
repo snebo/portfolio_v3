@@ -39,7 +39,7 @@ export default function Header() {
 								{link.name}
 								{link.name === activeSession && (
 									<motion.span
-										className="bg-gray-100 rounded-full absolute inset-0 -z-10 p-4 w-full dark:bg-gray-800"
+										className="bg-gray-100 rounded-full absolute inset-0 -z-10 px-4 py-3 w-full dark:bg-gray-800"
 										layoutId="activeSession"
 										transition={{ type: 'spring', stiffness: 380, damping: 30 }}
 									></motion.span>
