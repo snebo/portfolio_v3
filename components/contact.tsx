@@ -54,23 +54,26 @@ export default function Contact() {
 				I would love to hear about your project and how I could help.
 				<br />
 				Please fill out the form or send me a mail at{' '}
-				<a href="mailto:Snebo54@hotmail.com" className="underline font-semibold text-gray-950">
+				<a
+					href="mailto:Snebo54@hotmail.com"
+					className="underline font-semibold text-gray-950 dark:text-white/80"
+				>
 					Snebo54@hotmail.com
 				</a>
 				, and I&apos;ll get back to you as soon as possible.
 			</p>
-			<form className="mt-10 flex flex-col gap-2" onSubmit={handleSubmit}>
+			<form className="mt-10 flex flex-col gap-2 dark:text-black" onSubmit={handleSubmit}>
 				<input
 					type="email"
 					name="senderEmail"
-					className="h-14 border border-black/10 rounded-lg px-4"
+					className="h-14 border border-black/10 rounded-lg px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					placeholder="Your email"
 					required
 					maxLength={500}
 				/>
 				<textarea
 					name="senderMessage"
-					className="h-52 border border-black/10 rounded-lg my-3 p-4"
+					className="h-52 border border-black/10 rounded-lg my-3 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					placeholder="Your message"
 					required
 					maxLength={2500}

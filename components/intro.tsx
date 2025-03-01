@@ -60,8 +60,10 @@ export default function Intro() {
 				<span className="font-bold">Backend Software Engineer</span> with{' '}
 				<span className="font-bold">4+ years</span> of experience building reliable and efficient
 				web applications. I focus on creating strong backend systems that work seamlessly with{' '}
-				<span className="font-semibold text-black/65">user-friendly interfaces</span>, ensuring
-				everything runs smoothly behind the scenes.
+				<span className="font-semibold text-black/65 dark:text-white">
+					user-friendly interfaces
+				</span>
+				, ensuring everything runs smoothly behind the scenes.
 			</motion.h1>
 
 			<motion.h1
@@ -92,7 +94,7 @@ export default function Intro() {
 				}
 				<a
 					className="bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full
-                    outline-none focus:scale-105 hover:scale-105 hover:bg-white hover:border-black/55 active:scale-95 transition border border-black/10"
+                    outline-none focus:scale-105 hover:scale-105 hover:bg-white hover:border-black/55 active:scale-95 transition border border-black/10 dark:bg-white/10 dark:text-white"
 					href="/STEFANO-NEBO-RESUME.pdf"
 					download={true}
 				>
@@ -103,7 +105,7 @@ export default function Intro() {
 						href="https://www.linkedin.com/in/stefano-nebo/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-white text-gray-700 p-4 rounded-full border border-black/10 focus:scale-105 hover:scale-110 hover:bg-white hover:border-black/55 hover:text-gray-950 transition-all"
+						className="bg-white text-gray-700 p-4 rounded-full border border-black/10 focus:scale-105 hover:scale-110 hover:bg-white hover:border-black/55 hover:text-gray-950 transition-all dark:bg-white/10 dark:text-white"
 					>
 						{<BsLinkedin></BsLinkedin>}
 					</a>
@@ -111,7 +113,7 @@ export default function Intro() {
 						href="https://github.com/snebo"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-white text-gray-700 p-4 rounded-full border border-black/10 focus:scale-105 hover:scale-110 hover:bg-white hover:border-black/55 hover:text-gray-950 transition-all"
+						className="bg-white text-gray-700 p-4 rounded-full border border-black/10 focus:scale-105 hover:scale-110 hover:bg-white hover:border-black/55 hover:text-gray-950 transition-all dark:bg-white/10 dark:text-white"
 					>
 						{<FaGithub></FaGithub>}
 					</a>
