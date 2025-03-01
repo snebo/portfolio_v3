@@ -1,21 +1,11 @@
 'use client';
-import { useActiveSessionContext } from '@/context/active-session-context';
+import { useSectionInView } from '@/lib/hooks';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import React, { useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useRef } from 'react';
 import SectionHeading from './section-heading';
 
 export default function About() {
-	const { ref, inView } = useInView({
-		threshold: 0.5,
-	});
-	const { setActiveSession } = useActiveSessionContext();
-
-	useEffect(() => {
-		if (inView) {
-			setActiveSession('About');
-		}
-	}, [inView, setActiveSession]);
+	const { ref } = useSectionInView({ sectionName: 'About', thresoldValue: 0.5 });
 
 	const navref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({

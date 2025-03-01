@@ -1,22 +1,12 @@
 'use client';
-import { useActiveSessionContext } from '@/context/active-session-context';
 import { projectsData } from '@/lib/data';
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useSectionInView } from '@/lib/hooks';
+import React from 'react';
 import Project from './project';
 import SectionHeading from './section-heading';
 
 export default function ProjectSection() {
-	const { ref, inView } = useInView({
-		threshold: 0.3,
-	});
-	const { setActiveSession } = useActiveSessionContext();
-
-	useEffect(() => {
-		if (inView) {
-			setActiveSession('Projects');
-		}
-	}, [inView, setActiveSession]);
+	const { ref } = useSectionInView({ sectionName: 'Projects', thresoldValue: 0.3 });
 	return (
 		<section id="projects" className="scroll-mt-28" ref={ref}>
 			<SectionHeading>my Projects</SectionHeading>

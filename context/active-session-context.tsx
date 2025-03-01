@@ -1,14 +1,15 @@
 'use client';
-import { links } from '@/lib/data';
+import type { SectionName } from '@/lib/types';
 import React, { createContext, useState } from 'react';
 
-type SectionName = (typeof links)[number]['name'];
 type ActiveSessionContextProviderProps = {
 	children: React.ReactNode;
 };
 type ActiveSessionContextType = {
 	activeSession: SectionName;
 	setActiveSession: React.Dispatch<React.SetStateAction<SectionName>>;
+	timeOfLastClick: number;
+	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export const ActiveSessionContext = createContext<ActiveSessionContextType | null>(null);
@@ -17,9 +18,12 @@ export default function ActiveSessionContextProvider({
 	children,
 }: ActiveSessionContextProviderProps) {
 	const [activeSession, setActiveSession] = useState<SectionName>('Home'); // for tracking location on page
+	const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
 	return (
-		<ActiveSessionContext.Provider value={{ activeSession, setActiveSession }}>
+		<ActiveSessionContext.Provider
+			value={{ activeSession, setActiveSession, timeOfLastClick, setTimeOfLastClick }}
+		>
 			{children}
 		</ActiveSessionContext.Provider>
 	);

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function Header() {
-	const { activeSession, setActiveSession } = useActiveSessionContext();
+	const { activeSession, setActiveSession, setTimeOfLastClick } = useActiveSessionContext();
 	return (
 		<header className="z-[900] relative">
 			<motion.div
@@ -31,7 +31,10 @@ export default function Header() {
 									{ 'text-gray-950': activeSession === link.name }
 								)}
 								href={link.hash}
-								onClick={() => setActiveSession(link.name)}
+								onClick={() => {
+									setActiveSession(link.name);
+									setTimeOfLastClick(Date.now());
+								}}
 							>
 								{link.name}
 								{link.name === activeSession && (
