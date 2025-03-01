@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import ActiveSessionContextProvider from '@/context/active-session-context';
 import type { Metadata } from 'next';
@@ -25,6 +26,7 @@ export default function RootLayout({
 				<ActiveSessionContextProvider>
 					<Header />
 					{children}
+					<Footer />
 					<Toaster position="top-center" />
 				</ActiveSessionContextProvider>
 			</body>
