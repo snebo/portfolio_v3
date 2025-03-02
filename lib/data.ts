@@ -40,36 +40,52 @@ export const links = [
 
 export const experienceData = [
 	{
-		title: 'Software Developer - GetExamReady',
+		title: 'Software Engineer - ExamReady',
 		location: 'Remote',
 		description:
-			'Developed a transcription API using NVIDIA NeMo and Google Colab to process and analyze spoken content for the GetExamReady platform.',
+			'Spearheaded an ASR service using NVIDIA NeMo, Flask, and OpenAI APIs, automating transcription workflows and improving accuracy.',
 		icon: React.createElement(LuBriefcase),
+		date: '2024 - Present',
+	},
+	{
+		title: 'Bachelor of Technology in Industrial Mathematics',
+		location: 'Olusegun Agagu University of Science and Technology, Nigeria',
+		description:
+			'Studied mathematical modeling, algorithms, and problem-solving techniques applicable to real-world industries.',
+		icon: React.createElement(LuGraduationCap),
 		date: '2024',
 	},
 	{
 		title: 'Backend Developer - Inventors Community',
 		location: 'Remote',
 		description:
-			'Developed secure APIs and database schemas using NestJS and Mongoose. Worked in a team environment to enhance the Inventors community platform.',
+			'Led backend development using NestJS and MongoDB, implemented a scalable mailing service, and conducted unit testing with Jest.',
 		icon: React.createElement(LuBriefcase),
-		date: '2023',
+		date: '2023 - Present',
 	},
 	{
 		title: 'CodePath Software Engineering Course',
 		location: 'Remote',
 		description:
-			'Completed an intensive 3-month training program covering data structures, algorithms, and full-stack web development, focusing on industry best practices.',
+			'Completed an intensive training program covering data structures, algorithms, and full-stack web development.',
 		icon: React.createElement(LuGraduationCap),
 		date: '2024',
 	},
 	{
-		title: 'Bachelor’s Degree in [Your Major]',
-		location: 'Nigeria',
+		title: 'Data Analyst Intern - TownCriers',
+		location: 'Lagos, Nigeria',
 		description:
-			'Graduated with a strong foundation in software engineering, algorithms, and system design.',
-		icon: React.createElement(LuGraduationCap),
-		date: '2024',
+			'Automated data analysis workflows with Python, reducing processing time and enhancing market penetration strategies.',
+		icon: React.createElement(LuBriefcase),
+		date: '2023',
+	},
+	{
+		title: 'Frontend Developer Intern - Tech-Up',
+		location: 'Remote, Nigeria',
+		description:
+			'Integrated customer service chat, improved website responsiveness, and conducted UI/UX optimizations.',
+		icon: React.createElement(LuBriefcase),
+		date: '2022 - 20s23',
 	},
 ] as const;
 
