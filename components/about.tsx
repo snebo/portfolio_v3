@@ -32,9 +32,9 @@ export default function About() {
 				<p className="mb-3">
 					Over the years, I&apos;ve grown from a curious developer into a software engineer who
 					builds scalable, efficient, and impactful solutions. My journey started with{' '}
-					<span className="font-bold text-gray-700">game development</span> where i learnt the
-					fundamentals of <span className="underline font-semibold">OOP</span> and then transitioned
-					to backend development, where I worked on{' '}
+					<span className="font-bold text-gray-700 dark:text-gray-400">game development</span> where
+					i learnt the fundamentals of <span className="underline font-semibold">OOP</span> and then
+					transitioned to backend development, where I worked on{' '}
 					<span className="font-bold">secure APIs and databases</span> using{' '}
 					<span className="font-bold"> NestJS and MongoDB</span> for platforms like{' '}
 					<span className="italic font-semibold">Inventors </span>.
@@ -51,8 +51,10 @@ export default function About() {
 				</p>
 				<p className="mb-3">
 					Recently, I&apos;ve been building an{' '}
-					<span className="font-bold text-gray-900">automated Zoom meeting capture bot</span>,
-					leveraging <span className="font-bold">Zoom&apos;s Headless Meeting SDK</span> to record
+					<span className="font-bold text-gray-900 dark:text-gray-50">
+						automated Zoom meeting capture bot
+					</span>
+					, leveraging <span className="font-bold">Zoom&apos;s Headless Meeting SDK</span> to record
 					audio, captions, and participant data—pushing the boundaries of automation in virtual
 					communication.
 				</p>
