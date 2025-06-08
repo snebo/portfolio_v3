@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowDown, BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 
@@ -36,7 +36,7 @@ export default function Intro() {
 					</motion.div>
 
 					<motion.span
-						className="text-3xl absolute bottom-0 right-0"
+						className="text-4xl absolute bottom-0 right-0"
 						initial={{ opacity: 0, scale: 0 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{
@@ -52,26 +52,60 @@ export default function Intro() {
 			</div>
 
 			<motion.h1
-				className="mt-10 px-4 text-lg sm:text-xl font-medium !leading-[1.8rem]"
+				className="mt-10 px-4 text-lg sm:text-2xl font-medium sm:!leading-[2.8rem]"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
 			>
-				<span className="font-semibold">Hi, I&apos;m Stefano &mdash;</span>{' '}
-				<span className="font-bold">Backend Software Engineer</span> with{' '}
-				<span className="font-bold">4+ years</span> of experience building reliable and efficient
-				web applications. I focus on creating strong backend systems that work seamlessly with{' '}
-				<span className="font-semibold text-black/65 dark:text-white">
-					user-friendly interfaces
-				</span>
-				, ensuring everything runs smoothly behind the scenes.
+				<span>I&apos;m </span>
+				<span className="font-semibold">Stefano &mdash;</span>{' '}
+				<span className="font-bold">Backend-focused Software Engineer</span> with{' '}
+				<span className="font-bold">3+ years</span> of experience building fast and reliable web
+				applications. I'm Full-stack capable, always building, and love the process of turning
+				complex problems into actionable solutions.
 			</motion.h1>
 
 			<motion.h1
-				className="mt-3 mb-12 px-4 text-lg sm:text-xl font-medium !leading-[1.6rem]"
+				className="mt-3 mb-12 px-4 text-lg sm:text-xl font-bold !leading-[1.6rem] relative"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
 			>
-				I enjoy solving complex problems and making technology feel effortless for users.
+				<span className="relative inline-block">
+					<span
+						className="absolute inset-0 blur-lg animate-glow-gradient"
+						aria-hidden="true"
+						style={{
+							WebkitMaskImage: 'linear-gradient(90deg, #fff 80%, transparent 100%)',
+							maskImage: 'linear-gradient(90deg, #fff 80%, transparent 100%)',
+							opacity: 0.7,
+						}}
+					/>
+					<span className="bg-gradient-to-r from-purple-700 via-pink-400 to-pink-500 bg-clip-text text-transparent">
+						Code architect, problem-solver, backend whisperer.
+					</span>
+				</span>
+				<style jsx>{`
+					@keyframes glow-gradient {
+						0% {
+							opacity: 0.7;
+							filter: blur(8px);
+							background-position: 0% 50%;
+						}
+						50% {
+							opacity: 1;
+							filter: blur(16px);
+							background-position: 100% 50%;
+						}
+						100% {
+							opacity: 0.7;
+							filter: blur(8px);
+							background-position: 0% 50%;
+						}
+					}
+					.animate-glow-gradient {
+						animation: glow-gradient 3s ease-in-out infinite;
+						background-size: 200% 200%;
+					}
+				`}</style>
 			</motion.h1>
 			<motion.div
 				className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-base font-medium cursor-pointer"
@@ -88,8 +122,8 @@ export default function Intro() {
 							setTimeOfLastClick(Date.now());
 						}}
 					>
-						Contact me here{' '}
-						<BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
+						Contact Me
+						<BsArrowDown className="opacity-70 group-hover:translate-y-2 transition" />
 					</Link>
 				}
 				<a

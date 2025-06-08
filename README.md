@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Nebo Stefano – Software Engineer Resume
 
-## Getting Started
+Welcome! This repository contains my up-to-date resume along with supporting links to my portfolio, projects, and background as a backend-focused full-stack engineer. I specialize in building reliable, scalable backend systems, integrating AI tools, and deploying cloud-native applications that deliver real-world value.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hi, I'm **Nebo Stefano** — a backend engineer with 3+ years of experience shipping full-stack applications, working with fast-moving teams, and solving complex technical challenges. I thrive in backend-heavy environments but love collaborating across the stack.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I’ve worked on:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🤖 AI-powered tools (NVIDIA NeMo, OpenAI APIs)
+- 📊 Real-time analytics dashboards
+- 🧠 Automation bots with Zoom SDK
+- 🧱 Secure backend systems using **NestJS**, **Node.js**, **MongoDB**, and **SQL**
+- ☁️ Cloud deployments with **Docker**, **Kubernetes**, and **AWS**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Skills Snapshot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Category        | Tools & Tech                                           |
+| --------------- | ------------------------------------------------------ |
+| **Languages**   | JavaScript, TypeScript, Python, Ruby, SQL, C++         |
+| **Backend**     | Node.js, NestJS, Express, Flask, Ruby on Rails         |
+| **Frontend**    | React, Next.js, Tailwind CSS, HTML, CSS                |
+| **DevOps**      | Docker, Kubernetes, AWS (EC2/S3), Vercel, Render       |
+| **Databases**   | MongoDB, PostgreSQL, Firebase                          |
+| **AI/Tools**    | OpenAI APIs, NVIDIA NeMo, Zoom SDK, Ngrok              |
+| **Soft Skills** | Leadership, Communication, Mentorship, Problem-solving |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Featured Projects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **🎤 ASR Transcription API** – Built with Python, Flask & NeMo for ExamReady. Reduced manual transcription effort by 90%.
+- **🤖 Zoom Bot (Headless SDK)** – Containerized AI assistant for meeting capture and automation.
+- **📈 Real-Time Analytics Dashboard** – Firebase-powered metrics tracker for user behavior and system events.
+- **♟️ Chess Game GUI** – Interactive desktop chess interface built with Python & Pygame, prototyped in Ruby.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out more projects at 👉 [stefano-nebo.vercel.app](https://stefano-nebo.vercel.app)
+
+---
+
+## 📄 Resume
+
+You can view or download my latest resume below:
+
+➡️ [**View Resume (PDF)**](./STEFANO-NEBO-RESUME.pdf)
+
+---
+
+## 🔗 Connect With Me
+
+- **Portfolio:** [stefano-nebo.vercel.app](https://stefano-nebo.vercel.app)
+- **LinkedIn:** [linkedin.com/in/stefano-nebo](https://linkedin.com/in/stefano-nebo)
+- **GitHub:** [github.com/snebo](https://github.com/snebo)
+- **Email:** snebo54@hotmail.com
+
+---
+
+_Thanks for stopping by! Always open to exciting roles, cool collaborations, and building things that matter._ ✌️
