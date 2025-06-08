@@ -80,8 +80,8 @@ export default function About() {
 					— building systems that are seamless, resilient, and built to scale.
 				</p>
 				<p className="mb-3">
-					If you're looking for a developer who loves to learn, solve tough problems, and bring
-					positive energy to the team — let's connect!
+					If you&apos;re looking for a developer who loves to learn, solve tough problems, and bring
+					positive energy to the team — let&apos;s connect!
 				</p>
 			</motion.div>
 		</section>

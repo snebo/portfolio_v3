@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { BsArrowDown, BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowDown, BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 
@@ -60,7 +60,7 @@ export default function Intro() {
 				<span className="font-semibold">Stefano &mdash;</span>{' '}
 				<span className="font-bold">Backend-focused Software Engineer</span> with{' '}
 				<span className="font-bold">3+ years</span> of experience building fast and reliable web
-				applications. I'm Full-stack capable, always building, and love the process of turning
+				applications. I&apos;m Full-stack capable, always building, and love the process of turning
 				complex problems into actionable solutions.
 			</motion.h1>
 
