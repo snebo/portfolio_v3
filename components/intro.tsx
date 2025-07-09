@@ -129,7 +129,7 @@ export default function Intro() {
 				<a
 					className="bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full
                     outline-none focus:scale-105 hover:scale-105 hover:bg-white hover:border-black/55 active:scale-95 transition border border-black/10 dark:bg-white/10 dark:text-white"
-					href="/STEFANO-NEBO-RESUME.pdf"
+					href="/Stefano_Nebo_Senior_Fullstack_Engineer_Resume_2025.pdf"
 					download={true}
 				>
 					Download CV {<HiDownload />}
